@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rooms Management | Admin Dashboard</title>
+    <link rel="stylesheet" href="/css/roomsdashboard.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</head>
+<body>
+
+   
+        <main class="content">   
+              <!-- Sidebar -->
+    <aside class="sidebar">
+        <h2>OviStay</h2><hr>
+        <nav>
+            <ul>
+                <li><a href="/html/admindashboard.html">Dashboard</a></li>
+                <li><a href="/html/newbookingdashboard.html">New Bookings</a></li>
+                <li><a href="/html/refundbookingdashboard.html">Refund Bookings</a></li>
+                <li><a href="/html/bookingrecorddashboard.html">Booking Records</a></li>
+                <li><a href="/html/userdashboard.html">Users</a></li>
+                <li><a href="/html/userqueriesdashboard.html">User Queries</a></li>
+                <li><a href="/html/ratingdashboard.html">Ratings & Reviews</a></li>
+                <li class="active"><a href="/html/roomsdashboard.html">Rooms</a></li>
+                <li><a href="/html/featuresdashboard.html">Features & Facilities</a></li>
+                <li><a href="/html/carouseldashboard.html">Carousel</a></li>
+                <li><a href="/html/settingsdashboard.html">Settings</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard">
+        <header>
+            <h1>ROOMS MANAGEMENT</h1>
+            <button class="logout">LOG OUT</button>
+        </header> <br>
+            <!-- Search & Filter Section -->
+            <section class="filter-section">
+               
+                <input type="text" id="search" placeholder="Search by Room Name or Type...">
+                <select id="statusFilter">
+                    <option value="all">All Status</option>
+                    <option value="available">Available</option>
+                    <option value="booked">Booked</option>
+                    <option value="maintenance">Maintenance</option>
+                </select>
+                <button class="add-room-btn" onclick="openRoomForm()">+ Add Room</button>
+                
+            </section><br>
+
+            <!-- Rooms Table -->
+            <div class="rooms-section">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Room ID</th>
+                            <th>Room Name</th>
+                            <th>Type</th>
+                            <th>Price/Night</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="roomTable">
+                        <tr>
+                            <td>101</td>
+                            <td>Deluxe Suite</td>
+                            <td>Luxury</td>
+                            <td>3000</td>
+                            <td><span class="status available">Available</span></td>
+                            <td>
+                                <button class="edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                                <button class="delete-btn"><i class="fas fa-trash"></i> Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>102</td>
+                            <td>Family Room</td>
+                            <td>Standard</td>
+                            <td>2000</td>
+                            <td><span class="status booked">Booked</span></td>
+                            <td>
+                                <button class="edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                                <button class="delete-btn"><i class="fas fa-trash"></i> Delete</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>103</td>
+                            <td>Single Room</td>
+                            <td>Budget</td>
+                            <td>1000</td>
+                            <td><span class="status maintenance">Maintenance</span></td>
+                            <td>
+                                <button class="edit-btn"><i class="fas fa-edit"></i> Edit</button>
+                                <button class="delete-btn"><i class="fas fa-trash"></i> Delete</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </div>
+
+    <script defer src="/js/roomsdashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+.booking-container {
+    text-align: center;
+    padding: 20px;
+    background: #E5D0AC;
+    border-radius: 10px;
+    width: 60%;
+    margin: auto;
+}
+
+.booking-box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.booking-box div {
+    margin: 10px;
+}
+
+.booking-box label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.booking-box input, .booking-box select {
+    padding: 8px;
+    border: 1px solid #6D2323;
+    border-radius: 5px;
+}
+
+.booking-box button {
+    background: #A31D1D;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.booking-box button:hover {
+    background: #6D2323;
+}
+
+/* Hotel Results Styling */
+#hotel-results {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.hotel-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px auto;
+    width: 60%;
+}
+
+.hotel-card h3 {
+    color: #A31D1D;
+}
+
+.hotel-card button {
+    background: #1D6D5A;
+    color: white;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hotel-card button:hover {
+    background: #6D2323;
+}

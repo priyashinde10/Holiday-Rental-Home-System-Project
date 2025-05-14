@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carousel Management | Admin Dashboard</title>
+    <link rel="stylesheet" href="/css/carouseldashboard.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</head>
+<body>
+     <!-- Sidebar -->
+     <aside class="sidebar">
+        <h2>OviStay</h2><hr>
+        <nav>
+            <ul>
+                <li><a href="/html/admindashboard.html">Dashboard</a></li>
+                <li><a href="/html/newbookingdashboard.html">New Bookings</a></li>
+                <li><a href="/html/refundbookingdashboard.html">Refund Bookings</a></li>
+                <li><a href="/html/bookingrecorddashboard.html">Booking Records</a></li>
+                <li><a href="/html/userdashboard.html">Users</a></li>
+                <li><a href="/html/userqueriesdashboard.html">User Queries</a></li>
+                <li><a href="/html/ratingdashboard.html">Ratings & Reviews</a></li>
+                <li><a href="/html/roomsdashboard.html">Rooms</a></li>
+                <li><a href="/html/featuresdashboard.html">Features & Facilities</a></li>
+                <li class="active"><a href="/html/carouseldashboard.html">Carousel</a></li>
+                <li><a href="/html/settingsdashboard.html">Settings</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard">
+        <header>
+            <h1>CAROUSEL MANAGEMENT</h1>
+            <button class="logout">LOG OUT</button>
+        </header>
+
+            <div class="container">
+                <div class="upload-section">
+                    <h3>Upload Images</h3>
+                    <div class="drop-area" id="drop-area">
+                        <p>Drag & Drop images here or <span class="browse-btn">Browse</span></p>
+                        <input type="file" id="fileInput" multiple accept="image/*" hidden>
+                    </div>
+                </div>
+
+                <div class="carousel-preview">
+                    <h3>Carousel Images</h3>
+                    <div class="image-list" id="imageList"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+<script defer src="/js/carouseldashboard.js"></script>
+</body>
+</html>

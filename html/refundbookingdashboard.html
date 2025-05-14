@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Bookings - Holiday Rental</title>
+    <link rel="stylesheet" href="/css/refundbookingdashboard.css">
+   
+</head>
+<body>
+     <!-- Sidebar -->
+     <aside class="sidebar">
+        <h2>OviStay</h2><hr>
+        <nav>
+            <ul>
+                <li><a href="/html/admindashboard.html">Dashboard</a></li>
+                <li><a href="/html/newbookingdashboard.html">New Bookings</a></li>
+                <li class="active"><a href="/html/refundbookingdashboard.html">Refund Bookings</a></li>
+                <li><a href="/html/bookingrecorddashboard.html">Booking Records</a></li>
+                <li><a href="/html/userdashboard.html">Users</a></li>
+                <li><a href="/html/userqueriesdashboard.html">User Queries</a></li>
+                <li><a href="/html/ratingdashboard.html">Ratings & Reviews</a></li>
+                <li><a href="/html/roomsdashboard.html">Rooms</a></li>
+                <li><a href="/html/featuresdashboard.html">Features & Facilities</a></li>
+                <li><a href="/html/carouseldashboard.html">Carousel</a></li>
+                <li><a href="/html/settingsdashboard.html">Settings</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard">
+        <header>
+            <h1>REFUND BOOKING MANAGEMENT</h1>
+            <button class="logout">LOG OUT</button>
+        </header><br>
+            <main class="content">
+                <h1 id="h1">Refund Booking Requests</h1><br>
+                <section class="booking-section">
+                    <h2>Pending Refund Requests</h2>
+                    <table id="table">
+                        <thead>
+                            <tr>
+                                <th>Refund ID</th>
+                                <th>Guest Name</th>
+                                <th>Property</th>
+                                <th>Refund Amount</th>
+                                <th>Request Date</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="refundBookingTable">
+                            <!-- Dynamic Data will be added here via JavaScript -->
+                        </tbody>
+                    </table>
+                </section>
+            </main>
+            
+        </main>
+    </div>
+    
+    <script src="/js/refundbookingdashboard.js" defer></script>
+</body>
+</html>
+
+

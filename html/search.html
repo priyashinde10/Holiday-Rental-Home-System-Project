@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Search</title>
+    <link rel="stylesheet" href="/css/search.css">
+</head>
+<body>
+
+    <div class="booking-container">
+        <h2>Check Booking Availability</h2>
+        <div class="booking-box">
+            <div>
+                <label for="check-in">Check-in</label>
+                <input type="date" id="check-in">
+            </div>
+            <div>
+                <label for="check-out">Check-out</label>
+                <input type="date" id="check-out">
+            </div>
+            <div>
+                <label for="adult">Adult</label>
+                <select id="adult">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5+</option>
+                </select>
+            </div>
+            <div>
+                <label for="children">Children</label>
+                <select id="children">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2+</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Search</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="hotel-results"></div>
+
+    <script src="/js/searchhotels.js"></script>
+</body>
+</html>

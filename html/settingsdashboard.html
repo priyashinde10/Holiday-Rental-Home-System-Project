@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Admin Dashboard</title>
+    <link rel="stylesheet" href="/css/settingsdashboard.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</head>
+<body>
+     <!-- Sidebar -->
+     <aside class="sidebar">
+        <h2>OviStay</h2><hr>
+        <nav>
+            <ul>
+                <li><a href="/html/admindashboard.html">Dashboard</a></li>
+                <li><a href="/html/newbookingdashboard.html">New Bookings</a></li>
+                <li><a href="/html/refundbookingdashboard.html">Refund Bookings</a></li>
+                <li><a href="/html/bookingrecorddashboard.html">Booking Records</a></li>
+                <li><a href="/html/userdashboard.html">Users</a></li>
+                <li><a href="/html/userqueriesdashboard.html">User Queries</a></li>
+                <li><a href="/html/ratingdashboard.html">Ratings & Reviews</a></li>
+                <li><a href="/html/roomsdashboard.html">Rooms</a></li>
+                <li><a href="/html/featuresdashboard.html">Features & Facilities</a></li>
+                <li><a href="/html/carouseldashboard.html">Carousel</a></li>
+                <li class="active"><a href="/html/settingsdashboard.html">Settings</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="dashboard">
+        <header>
+            <h1>SETTINGS</h1>
+            <button class="logout">LOG OUT</button>
+        </header>
+
+            <div class="container">
+                <h3>Profile Settings</h3>
+                <div class="form-group">
+                    <label for="username">Name</label>
+                    <input type="text" id="username" placeholder="Admin Name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="admin@example.com">
+                </div>
+                <div class="form-group">
+                    <label for="password">New Password</label>
+                    <input type="password" id="password" placeholder="Enter new password">
+                </div>
+                <button class="save-btn">Save Changes</button>
+
+                <h3>Security Settings</h3>
+                <div class="security-options">
+                    <div class="option">
+                        <input type="checkbox" id="2fa">
+                        <label for="2fa">Enable Two-Factor Authentication</label>
+                    </div>
+                    <div class="option">
+                        <input type="checkbox" id="notifications">
+                        <label for="notifications">Enable Email Notifications</label>
+                    </div>
+                </div>
+
+                <button class="save-btn">Save Settings</button>
+            </div>
+        </main>
+    </div>
+
+    <script defer src="/js/settingsdashboard.js"></script>
+</body>
+</html>

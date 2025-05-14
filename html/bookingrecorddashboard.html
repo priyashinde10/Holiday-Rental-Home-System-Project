@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Records - Admin Dashboard</title>
+    <link rel="stylesheet" href="/css/bookingrecorddashboard.css">
+    
+</head>
+<body>
+ <!-- Sidebar -->
+ <aside class="sidebar">
+    <h2>OviStay</h2><hr>
+    <nav>
+        <ul>
+            <li><a href="/html/admindashboard.html">Dashboard</a></li>
+            <li><a href="/html/newbookingdashboard.html">New Bookings</a></li>
+            <li><a href="/html/refundbookingdashboard.html">Refund Bookings</a></li>
+            <li class="active"><a href="/html/bookingrecorddashboard.html">Booking Records</a></li>
+            <li><a href="/html/userdashboard.html">Users</a></li>
+            <li><a href="/html/userqueriesdashboard.html">User Queries</a></li>
+            <li><a href="/html/ratingdashboard.html">Ratings & Reviews</a></li>
+            <li><a href="/html/roomsdashboard.html">Rooms</a></li>
+            <li><a href="/html/featuresdashboard.html">Features & Facilities</a></li>
+            <li><a href="/html/carouseldashboard.html">Carousel</a></li>
+            <li><a href="/html/settingsdashboard.html">Settings</a></li>
+        </ul>
+    </nav>
+</aside>
+
+<!-- Main Content -->
+<main class="dashboard">
+    <header>
+        <h1>BOOKING RECORDS</h1>
+        <button class="logout">LOG OUT</button>
+    </header>
+
+        <main class="content">
+            <h2>Booking Records</h2>
+            
+            <div class="search-filter">
+                <input type="text" id="searchInput" placeholder="Search by name or ID">
+                <select id="statusFilter">
+                    <option value="">All Status</option>
+                    <option value="Confirmed">Confirmed</option>
+                    <option value="Pending">Pending</option>
+                    <option value="Cancelled">Cancelled</option>
+                </select>
+            </div>
+
+            <table id="bookingTable">
+                <thead>
+                    <tr>
+                        <th>Booking ID</th>
+                        <th>Name</th>
+                        <th>Property</th>
+                        <th>Check-in</th>
+                        <th>Check-out</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#1001</td>
+                        <td>John Doe</td>
+                        <td>Luxury Villa</td>
+                        <td>2025-03-10</td>
+                        <td>2025-03-15</td>
+                        <td class="status">Pending</td>
+                        <td>
+                            <button class="approve-btn">Approve</button>
+                            <button class="cancel-btn">Cancel</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>#1002</td>
+                        <td>Jane Smith</td>
+                        <td>Beach House</td>
+                        <td>2025-04-05</td>
+                        <td>2025-04-12</td>
+                        <td class="status">Confirmed</td>
+                        <td>
+                            <button class="approve-btn" disabled>Approved</button>
+                            <button class="cancel-btn">Cancel</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <script defer src="/js/bookingrecorddashboard.js"></script>
+</body>
+</html>

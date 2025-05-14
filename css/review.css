@@ -1,0 +1,241 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #FEF9E1;
+    color: #6D2323;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+.logo{
+    font-size: 50px;
+    text-decoration: underline;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #6D2323;
+    font-size: 30px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #A31D1D;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 20px;
+    background-color:#E5D0AC;
+    color: #6D2323;
+   
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    font-size: 21px;
+}
+
+.review-section {
+    padding: 40px;
+    text-align: center;
+}
+.review-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.review-card {
+    background: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    text-align: left;
+}
+.review-card h3{
+    font-size: 25px;
+}
+.review-card p{
+    font-size: 20px;
+}
+.review-text {
+    font-size: 20px;
+    color:#A31D1D;
+}
+.rating {
+    color: #f39c12;
+    font-size: 18px;
+    margin-top: 5px;
+ 
+}
+.add-review {
+    padding: 20px;
+    text-align: center;
+}
+.add-review {
+    background-image: url('/Images/reviewbgimg.png'); /* Replace with the path to your image */
+    background-size: 100%;  /* Ensure the image covers the entire section */
+    background-position: center;  /* Center the background image */
+    background-repeat: no-repeat;  /* Ensure the image doesn't repeat */
+    padding: 40px;
+    /* height: 600px; */
+    /* border-radius: 10px; */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    color: #fff;  /* Change text color to white to stand out against the background */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section h2{
+    font-size: 40px;
+    text-decoration: underline;
+}
+input, textarea, select {
+    height: 30px;
+    width: 60%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 17px;
+}
+select{
+    height: 50px;
+    font-size: 25px;
+    width: 61%;
+}
+
+button {
+    background-color: #A31D1D;;
+    color: #fff;
+    padding: 10px 20px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 25px;
+}
+button:hover {
+    background-color: #6D2323;
+}
+
+/* Footer Styling */
+.footer {
+    background-color: #4C1D1D;
+    color: #f8f8f8;
+    padding: 40px 10%;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer-about,
+.footer-links,
+.footer-social {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer h3 {
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.footer p, .footer a {
+    font-size: 20px;
+    color: #f8f8f8;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: #FFD700;
+}
+
+/* Quick Links Styling */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    
+    margin: 8px 0;
+}
+
+.footer-links a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-left: 210px;
+}
+
+/* Social Media Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.social-icon {
+    font-size: 20px;
+    color: #f8f8f8;
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.social-icon:hover {
+    background: #FFD700;
+    color: #4C1D1D;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+    font-size: 30px;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+}
+

@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body  {
+    font-family: 'poppins', sans-serif;
+}
+h1,h2 {
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style:none;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.flex_space {
+    display: flex;
+    justify-content: space-between;
+}
+
+button {
+    border: none;
+    background: none;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.primary-btn {
+    padding: 15px 40px;
+    background: rgb(210, 21, 119);
+    font-weight: bold;
+    color: white;
+
+}
+
+.secondary-btn {
+    padding: 15px 40px;
+    background:rgb(210, 21, 119) ;
+    font-weight: bold;
+    color: white;
+}
+
+.container {
+    max-width: 100%;
+    margin: auto;
+}
+
+/*------header------*/
+header {
+    height:10vh;
+    line-height: 10vh;
+    padding: 0 20px; 
+}
+h1{
+    color:rgb(210, 21, 119);
+    text-decoration:rgb(210, 21, 119) underline ;
+    font-weight:bold ;
+    
+
+}
+
+header ul{
+    display: inline-block;
+}
+
+header ul li{
+    display: inline-block;
+    text-transform: uppercase;
+}
+header ul li a {
+    color:#000;
+    margin: 0 10px;
+    transition: 0.5s;
+}
+
+header ul li a:hover {
+    color: #7fc142;
+
+}
+
+header i {
+    margin: 0 20px;
+}
+
+header button {
+    padding: 13px 40px;
+}
+
+header .navlinks span {
+    display: none;
+}
+
